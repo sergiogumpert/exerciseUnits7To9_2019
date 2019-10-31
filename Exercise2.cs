@@ -7,20 +7,20 @@ class TextWithoutA
     static void Main()
     {
         string text;
-        byte haveA;
+        bool haveA = false;
         Console.WriteLine("Write text");
         do
         {
-            haveA = 0;
+            haveA = false;
             text = Console.ReadLine();
             foreach (char letter in text)
             {
                 if (letter == 'a' || letter == 'A')
-                    haveA = 1;
-                else if (haveA == 0)
-                    haveA = 0;
+                    haveA = true;
+                else if (haveA == false)
+                    haveA = false;
             }
         }
-        while (haveA != 0);
+        while (haveA != false);
     }
 }
