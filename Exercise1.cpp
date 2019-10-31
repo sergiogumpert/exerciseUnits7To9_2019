@@ -12,24 +12,24 @@ int main ()
         cin >> n2;
         if (n2 < 0 )
         {
-        cout << "Enter a positive number" << endl;
-            i--;
+            cout << "Enter a positive number" << endl;
+                i--;
         }
         else if (n1 < n2)
         {
-        increments++;
-        n1=n2 ;
+            increments++;
+            n1=n2 ;
         }
         else if (n1 > n2)
         {
-        decrements++;
-        n1=n2 ;
+            decrements++;
+            n1=n2 ;
         }
         n1=n2;
         
     }
     cout << "Has been " << increments << " increments, and " << decrements-1 
-    <<" decrements" << endl;
+        <<" decrements" << endl;
 
     return 0;
 }
